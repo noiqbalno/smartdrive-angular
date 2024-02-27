@@ -1,0 +1,86 @@
+<div class="row">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-header">
+        <div class="d-flex justify-content-between">
+          <h3 class="card-title">Address</h3>
+          <button
+            class="btn btn-warning"
+            type="button"
+            data-toggle="modal"
+            data-target="#addAddressModal"
+          >
+            <i class="fa fa-plus"></i>
+            Add
+          </button>
+        </div>
+      </div>
+
+      <div class="card-body table-responsive p-0">
+        <table class="table table-hover text-nowrap">
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Address</th>
+              <th>City</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Jl. Sambiloto 20 Babakan Madand</td>
+              <td>Bogor</td>
+              <td>
+                <button
+                  class="btn btn-primary mr-2"
+                  type="button"
+                  data-toggle="modal"
+                  data-target="#editAddressModal"
+                >
+                  <i class="fa fa-edit"></i>
+                  Edit
+                </button>
+                <button
+                  class="btn btn-danger"
+                  data-toggle="modal"
+                  data-target="#deleteAddressModal"
+                >
+                  <i class="fa fa-trash"></i>
+                  Delete
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Jl. Rauna Said No 99</td>
+              <td>Jakarta</td>
+              <td>
+                <button
+                  class="btn btn-primary mr-2"
+                  type="button"
+                  data-toggle="modal"
+                  data-target="#editAddressModal"
+                >
+                  <i class="fa fa-edit"></i>
+                  Edit
+                </button>
+                <button
+                  class="btn btn-danger"
+                  data-toggle="modal"
+                  data-target="#deleteAddressModal"
+                >
+                  <i class="fa fa-trash"></i>
+                  Delete
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- modal -->
+<app-edit-address-popup></app-edit-address-popup>

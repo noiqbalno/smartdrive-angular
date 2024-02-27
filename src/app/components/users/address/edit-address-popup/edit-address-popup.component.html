@@ -1,0 +1,53 @@
+<div
+  class="modal fade"
+  id="addAddressModal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="addAddressModal"
+  aria-hidden="true"
+>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="addAddressModal">Address</h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label class="col-form-label">Address 1:</label>
+            <textarea class="form-control" name="address_1"></textarea>
+          </div>
+          <div class="form-group">
+            <label class="col-form-label">Address 2:</label>
+            <textarea class="form-control" name="address_2"></textarea>
+          </div>
+          <div class="form-group">
+            <label class="col-form-label">City:</label>
+            <select name="Address_type" id="" class="form-control" required>
+              <option>Bogor</option>
+              <option>Jakarta</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="col-form-label">Postal Code:</label>
+            <input type="text" class="form-control" name="postal_code" />
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+          Close
+        </button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
